@@ -5,13 +5,25 @@
   color: #181818;
   font-family: "Roboto", sans-serif;
 }
-a {
-  text-decoration: none;
-  color: inherit;
+
+.ticks {
+  padding: 2rem;
+  color: white;
+  list-style-type: "✅ ";
 }
+
 .nav__links a[data-active="true"] {
   color: #a41034;
   font-weight: bold;
   text-decoration: underline yellow 3px;
   text-underline-offset: 5px;
+}
+
+table.syllabus td,
+table.syllabus th {
+  padding: 1rem;
+}
+
+img {
+  object-fit: cover;
 }

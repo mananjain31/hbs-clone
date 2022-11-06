@@ -15,34 +15,655 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-red": "#a41034",
+            },
+          },
+        },
+      };
+    </script>
     <title>Online Leadership Principles Course | HBS Online</title>
   </head>
   <body>
-    <header>
-      <nav class="nav flex justify-between px-6 py-4">
-        <img
-          loading="eager"
-          width="150"
-          height="84"
-          src="https://webassets.hbs.edu/libs/framework/1.0/images/HBS-Online-Stacked.svg"
-          alt="HBS Online"
-        />
-        <ul class="nav__links flex items-center gap-5 text-lg">
-          <li><a href="#" data-active="true">Courses</a></li>
-          <li><a href="#" data-active="false">For Organizations</a></li>
-          <li><a href="#" data-active="false">Insights</a></li>
-          <li><a href="#" data-active="false">More Info</a></li>
-        </ul>
-        <div class="nav__icons flex items-center gap-5">
-          <a href="https://www.hbs.edu/online/search" class="nav__icon">
-            <i class="fa fa-search"></i>
-          </a>
-          <span>Login</span>
-          <i class="fa fa-bars"></i>
+    <nav class="nav flex justify-between px-6 py-4 sticky top-0 bg-white z-10">
+      <img
+        loading="eager"
+        width="150"
+        height="84"
+        src="https://webassets.hbs.edu/libs/framework/1.0/images/HBS-Online-Stacked.svg"
+        alt="HBS Online"
+      />
+      <ul class="nav__links flex items-center gap-5 text-lg">
+        <li><a href="#" data-active="true">Courses</a></li>
+        <li><a href="#" data-active="false">For Organizations</a></li>
+        <li><a href="#" data-active="false">Insights</a></li>
+        <li><a href="#" data-active="false">More Info</a></li>
+      </ul>
+      <div class="nav__icons flex items-center gap-5">
+        <a href="https://www.hbs.edu/online/search" class="nav__icon">
+          <i class="fa fa-search"></i>
+        </a>
+        <span>Login</span>
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+    <header class="flex lg:flex-row flex-col-reverse">
+      <div
+        class="pl-24 pr-10 py-4 pb-20 bg-primary-red lg:w-1/2 flex flex-col gap-4 items-start"
+      >
+        <div class="text-white lg:block hidden font-thin text-sm">
+          Harvard Business School→HBS Online→ Online Business Certificate
+          Courses This course is part of the Leadership & Management track.
+          Leadership Principles
         </div>
-      </nav>
+        <h1 class="text-5xl text-white">
+          Develop the Leadership Skills to Advance Your Career, Team, and
+          Organization
+        </h1>
+        <p class="text-white">
+          Leadership Principles is designed to help new and aspiring leaders
+          unleash the potential in themselves and others, and cultivate
+          high-performing teams. Become a more versatile leader who can mobilize
+          others by immersing yourself in real-world leadership challenges,
+          self-assessments, and 360-degree feedback from colleagues and peers.
+        </p>
+        <button class="text-white mt-3 bg-black px-4 py-2">APPLY NOW ></button>
+      </div>
+      <div class="flex flex-col relative lg:w-1/2">
+        <img
+          src="https://cloudinary.hbs.edu/hbsit/image/upload/s--VzYAl3YN--/f_auto,c_fill,w_1280,/v20200101/9CB9EE3C89E1851792D77DAB6615A347.jpg"
+          class="p-0 m-0 w-full h-full object-cover"
+        />
+        <h2
+          class="text-2xl grid place-items-center bg-black text-white absolute left-0 right-0 lg:bottom-0 lg:top-auto top-0 py-2"
+        >
+          Leadership Principles
+        </h2>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <!-- what you'll learn -->
+      <section>
+        <h3 class="font-bold flex gap-4 items-center justify-center py-16">
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+          WHAT YOU'LL LEARN
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+        </h3>
+        <div
+          class="pl-24 pr-32 flex lg:flex-row flex-col-reverse justify-evenly"
+        >
+          <ul class="ticks flex flex-col gap-4">
+            <li>
+              Understand your motivational drivers, emotional intelligence, and
+              communication methods to establish a personal leadership style
+            </li>
+            <li>
+              Apply or adapt your leadership style to meet specific challenges
+            </li>
+            <li>Manage the conditions that drive team performance</li>
+            <li>
+              Coach colleagues and share feedback in ways that enable them to
+              develop and deliver
+            </li>
+            <li>Handle stressful and demanding leadership situations</li>
+            <li>
+              Take charge of your professional development as you navigate the
+              challenges of transitioning from an individual contributor to a
+              leader
+            </li>
+          </ul>
+          <img
+            class="kWidgetCentered"
+            src="https://www.kaltura.com/p/1423662/sp/142366200/thumbnail/entry_id/1_7okpn1ww/width/650/height"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- about professors -->
+      <section class="pl-24 pr-32 pb-24">
+        <h3 class="font-bold text-lg">About the Professors</h3>
+        <div class="font-thin leading-loose flex flex-col gap-4">
+          <div class="flex gap-4">
+            <img
+              src="https://online.hbs.edu/PublishingImages/courses/leadership-principles/margolis-library-140.jpg"
+              alt="professor 1"
+            />
+            <p>
+              <a
+                href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=10658"
+                class="text-primary-red underline"
+                >Joshua Margolis</a
+              >
+              is the James Dinan and Elizabeth Miller Professor of Business
+              Administration at Harvard Business School, Unit Head of the
+              School’s Organizational Behavior Unit, and Faculty Chair of the
+              Program for Leadership Development and the Christensen Center for
+              Teaching and Learning. He is co-author of the book People and
+              Profits: The Search for a Link between a Company’s Social and
+              Financial Performance, and has won numerous awards, including the
+              Robert F. Greenhill Award and the Apgar Award for Innovation in
+              Teaching.
+            </p>
+          </div>
+          <div class="flex gap-4">
+            <img
+              src="https://online.hbs.edu/PublishingImages/courses/leadership-principles/mayo-library-140.jpg"
+              alt="professor 2"
+            />
+            <p>
+              <a
+                href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=154993"
+                class="text-primary-red underline"
+                >Joshua Margolis</a
+              >
+              is the Thomas S. Murphy Senior Lecturer of Business Administration
+              and C. Roland Christensen Distinguished Management Educator in the
+              Organizational Behavior Unit at Harvard Business School. He served
+              as director of the School’s Leadership Initiative for 16 years and
+              was previously the course head for FIELD, a required experiential,
+              field-based course in the first year of the MBA program. He is
+              co-editor of the volume Race, Work, and Leadership: New
+              Perspectives on the Black Experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Who Will Benefit -->
+      <section class="py-16 bg-gray-200">
+        <h3 class="font-bold flex gap-4 items-center justify-center">
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+          WHO WILL BENEFIT
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+        </h3>
+        <div class="flex md:flex-row flex-col pt-10">
+          <div class="flex flex-col gap-2 items-center w-1/3 text-center">
+            <i class="fa fa-briefcase text-8xl"></i>
+            <h4 class="text-xl font-bolder">
+              Early- and Mid-Career Professionals
+            </h4>
+            <p>
+              Prepare for leadership roles after working as an individual
+              contributor or functional specialist.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 items-center w-1/3 text-center">
+            <i class="fa fa-briefcase text-8xl"></i>
+            <h4 class="text-xl font-bolder">
+              Early- and Mid-Career Professionals
+            </h4>
+            <p>
+              Prepare for leadership roles after working as an individual
+              contributor or functional specialist.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 items-center w-1/3 text-center">
+            <i class="fa fa-briefcase text-8xl"></i>
+            <h4 class="text-xl font-bolder">
+              Early- and Mid-Career Professionals
+            </h4>
+            <p>
+              Prepare for leadership roles after working as an individual
+              contributor or functional specialist.
+            </p>
+          </div>
+        </div>
+        <div class="pt-10 grid place-items-center underline">
+          <a href="#" class="font-bold text-xl">
+            Is Leadership Principles Right for You?</a
+          >
+        </div>
+      </section>
+      <!-- program structure -->
+      <section class="py-24 px-24">
+        <h3 class="font-bold flex gap-4 items-center justify-center mb-10">
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+          PROGRAM STRUCTURE
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+        </h3>
+        <div>
+          <img
+            src="https://online.hbs.edu/Style%20Library/api/resize.aspx?kaltura=0_2vn2oacv&w=492&h=277"
+            alt="discuss"
+            class="float-right"
+          />
+          <div class="leading-loose">
+            <p>
+              The course begins with a two-week prework period in which you’ll
+              be asked to complete a self-assessment and solicit feedback from
+              colleagues, such as managers, peers, and direct reports. The
+              prework will take approximately one hour of your time and roughly
+              30 minutes for each colleague who participates.
+            </p>
+            <p>
+              Upon successful completion of the prework—which requires obtaining
+              ratings from at least two colleagues in addition to the
+              self-assessment—you’ll receive a detailed report that provides
+              insight into your emotional intelligence and how you’re perceived
+              by others. Emotional intelligence is a central theme of the
+              Leadership Principles course. By completing the prework, you’ll
+              enhance your knowledge of both the course materials and your
+              personal leadership. The course content is delivered over a
+              four-week period after the prework concludes. The course also
+              features several video upload exercises in which you'll be
+              presented with scenarios and asked to video record yourself
+              reacting to various leadership challenges.
+            </p>
+            <p>
+              These exercises have been developed to let you step into the shoes
+              of decision-makers, gain insight into your leadership style,
+              practice techniques taught in the course, and—in some cases—share
+              feedback with fellow learners. You can record yourself on a phone,
+              computer, or other video recording device and will be asked to
+              upload the video to the course. You should expect to spend
+              approximately seven to nine hours per week on coursework, which
+              can be completed on your own time while meeting regular deadlines.
+            </p>
+          </div>
+          <!-- 3 cards -->
+          <div class="py-10 flex justify-center gap-14 flex-wrap">
+            <div class="flex flex-col gap-2 text-center">
+              <h3 class="font-bold text-2xl">December 2022</h3>
+              <span><span class="font-bold">Length:</span> 6 weeks</span>
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <a href="#" class="text-primary-red underline">
+                Detailed Calendar (pdf)
+              </a>
+              <div>
+                <i class="fa fa-desktop"></i>
+                <i class="fa fa-desktop"></i>
+              </div>
+              <div>
+                <button class="bg-primary-red text-white px-4 py-2 mt-4">
+                  APPLY NOW >
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 text-center">
+              <h3 class="font-bold text-2xl">December 2022</h3>
+              <span><span class="font-bold">Length:</span> 6 weeks</span>
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <a href="#" class="text-primary-red underline">
+                Detailed Calendar (pdf)
+              </a>
+              <div>
+                <i class="fa fa-desktop"></i>
+                <i class="fa fa-desktop"></i>
+              </div>
+              <div>
+                <button class="bg-primary-red text-white px-4 py-2 mt-4">
+                  APPLY NOW >
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 text-center">
+              <h3 class="font-bold text-2xl">December 2022</h3>
+              <span><span class="font-bold">Length:</span> 6 weeks</span>
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <span
+                ><span class="font-bold">Program Prework:</span> 12/7/22 -
+                12/20/22</span
+              >
+              <a href="#" class="text-primary-red underline">
+                Detailed Calendar (pdf)
+              </a>
+              <div>
+                <i class="fa fa-desktop"></i>
+                <i class="fa fa-desktop"></i>
+              </div>
+              <div>
+                <button class="bg-primary-red text-white px-4 py-2 mt-4">
+                  APPLY NOW >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Syllabus -->
+      <section class="px-24 mb-10">
+        <h3 class="font-bold flex gap-4 items-center justify-center mb-10">
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+          SYLLABUS
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+        </h3>
+        <div class="flex flex-col gap-4 leading-loose">
+          <p>
+            Leadership Principles leverages self-assessments, 360° feedback from
+            colleagues, and the perspectives of fellow learners to help
+            participants build greater self-awareness and enhance the
+            versatility of their leadership style and approach. Through
+            multimedia case studies and interviews with experts, participants in
+            this program will experience wide-ranging leadership challenges and
+            develop the skills needed to address different situations capably
+            and authentically.
+          </p>
+          <p>
+            Learning requirements: In order to earn a Certificate of Completion,
+            participants must thoughtfully complete all modules (Prework and
+            Modules 1-4) by stated deadlines.
+          </p>
+          <p>
+            Prework: In the first two weeks after the course start date, you'll
+            complete a self-assessment and ask colleagues, managers, and/or
+            direct reports to rate you on dimensions of emotional and social
+            intelligence. These two components comprise the 360° assessment
+            known as the Emotional and Social Competency Inventory (ESCI).
+          </p>
+          <p>
+            Please note that starting in July 2022, we will not be able to offer
+            the ESCI or the Personal Values Questionnaire to participants
+            located in Russia.
+          </p>
+        </div>
+        <div class="py-8">
+          <b>Leads Interviewed</b>
+          <ul class="list-disc pl-4 leading-relaxed">
+            <li>
+              Gonzalo Muñoz Sanz, Leadership Development Program, Amadeus North
+              America
+            </li>
+            <li>
+              Gonzalo Muñoz Sanz, Leadership Development Program, Amadeus North
+              America
+            </li>
+            <li>
+              Gonzalo Muñoz Sanz, Leadership Development Program, Amadeus North
+              America
+            </li>
+            <li>
+              Gonzalo Muñoz Sanz, Leadership Development Program, Amadeus North
+              America
+            </li>
+          </ul>
+        </div>
+        <button class="bg-primary-red px-4 py-2 text-white">
+          DOWNLOAD SYLLABUS (PDF) >
+        </button>
+      </section>
+      <section class="px-24">
+        <table class="syllabus">
+          <thead>
+            <tr class="bg-gray-300">
+              <th align="left" class="bg-gray-400">Module</th>
+              <th align="left">Takeaways</th>
+              <th align="left">Key Exercises</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="align-top bg-gray-200">
+              <td class="bg-gray-300">Module 1: Taking Charge</td>
+              <td>
+                <ul class="list-disc pl-4">
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="list-disc pl-4">
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="align-top bg-gray-200">
+              <td class="bg-gray-300">Module 2: Leading Your Team</td>
+              <td>
+                <ul class="list-disc pl-4">
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="list-disc pl-4">
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="align-top bg-gray-200">
+              <td class="bg-gray-300">
+                Module 3: Unleashing Potential in Yourself and Others
+              </td>
+              <td>
+                <ul class="list-disc pl-4">
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="list-disc pl-4">
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                  <li>
+                    Appreciate how the work of leadership is different in
+                    supporting, driving, and guiding others
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- hbs online advantage -->
+      <section class="px-24 py-16">
+        <h3 class="font-bold flex gap-4 items-center justify-center">
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+          THE HBS ONLINE ADVANTAGE
+          <span class="bg-yellow-400 w-10 h-0.5"> </span>
+        </h3>
+        <div class="py-10 flex lg:flex-row flex-col-reverse">
+          <div>
+            <ul class="flex flex-col gap-2 text-3xl ticks">
+              <li>World-class faculty</li>
+              <li>World-class faculty</li>
+              <li>World-class faculty</li>
+              <li>World-class faculty</li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              officia voluptates, tempora sunt nihil saepe totam optio nam ab
+              excepturi maxime accusantium laboriosam minus perferendis labore
+              odio praesentium nisi debitis!
+            </p>
+          </div>
+          <img
+            src="https://online.hbs.edu/Style%20Library/api/resize.aspx?kaltura=1_9xs57q3o&w=492&h=277"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- stories from our learners -->
+      <section class="flex">
+        <img
+          src="https://d3vgmmrg377kge.cloudfront.net/Style%20Library/api/resize.aspx?kaltura=1_gooqqx9f&w=723&h=406"
+          alt="laptop girl"
+          class="w-1/2"
+        />
+        <div
+          class="flex flex-col gap-4 items-center justify-center text-center bg-green-700 relative"
+        >
+          <h3 class="text-3xl font-bold">Stories from Our Learners</h3>
+          <p class="px-32">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque a
+            ipsum necessitatibus expedita ex voluptas vero voluptatibus,
+            quoipsum necessitatibus expedita ex voluptas vero voluptatibus,
+            quoipsum necessitatibus expedita ex voluptas vero voluptatibus, quod
+            iste, ea repudiandae voluptatem? Porro maiores numquam nostrum
+            tempore quia quam eos?
+          </p>
+          <p>
+            Jimmy McCormick, <br />
+            Digital Marketing Specialist
+          </p>
+          <!-- arrows -->
+          <div class="absolute top-[50%] flex justify-between w-full px-10">
+            <span
+              class="border border-1 border-black rounded-full w-6 flex items-center justify-center cursor-pointer"
+              >< </span
+            ><span
+              class="border border-1 border-black rounded-full w-6 flex items-center justify-center cursor-pointer"
+              >>
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- cards -->
+      <section
+        class="px-24 py-16 flex justify-center lg:flex-nowrap flex-wrap gap-4"
+      >
+        <div>
+          <div class="text-center mb-4">
+            <i class="fa fa-search text-5xl"></i>
+          </div>
+          <h3 class="text-2xl mb-4">Request More Information</h3>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime
+            atque rem dolor enim vero sit voluptatum excepturi? Voluptate
+            necessitatibus suscipit beatae laboriosam dolore at autem cumque
+            dignissimos nemo accusamus.
+          </p>
+          <button class="bg-primary-red text-white px-4 py-2 mt-10">
+            Lern More
+          </button>
+        </div>
+        <div>
+          <div class="text-center mb-4">
+            <i class="fa fa-search text-5xl"></i>
+          </div>
+          <h3 class="text-2xl mb-4">Request More Information</h3>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime
+            atque rem dolor enim vero sit voluptatum excepturi? Voluptate
+            necessitatibus suscipit beatae laboriosam dolore at autem cumque
+            dignissimos nemo accusamus.
+          </p>
+          <button class="bg-primary-red text-white px-4 py-2 mt-10">
+            Lern More
+          </button>
+        </div>
+        <div>
+          <div class="text-center mb-4">
+            <i class="fa fa-search text-5xl"></i>
+          </div>
+          <h3 class="text-2xl mb-4">Request More Information</h3>
+          <p class="mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime
+            atque rem dolor enim vero sit voluptatum excepturi? Voluptate
+            necessitatibus suscipit beatae laboriosam dolore at autem cumque
+            dignissimos nemo accusamus.
+          </p>
+          <button class="bg-primary-red text-white px-4 py-2 mt-10">
+            Lern More
+          </button>
+        </div>
+      </section>
+      <!-- earn your certificate -->
+      <section class="flex lg:flex-row flex-col-reverse bg-primary-red">
+        <div class="flex flex-col items-center justify-center gap-6 lg:w-1/2">
+          <h3 class="text-4xl text-white">Earn Your Certificate</h3>
+          <p class="w-1/2 text-center text-white">
+            Enroll today in Harvard Business School Online's Leadership
+            Principles course.
+          </p>
+          <button class="px-4 py-2 bg-black text-white">APPLY NOW ></button>
+        </div>
+
+        <img
+          src="https://cloudinary.hbs.edu/hbsit/image/upload/s--k_iQfYQ_--/f_auto,c_fill,w_1280,/v20200101/1BCEBC4188317B6B824E7DE310B8601D.jpg"
+          class="lg:w-1/2"
+        />
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
