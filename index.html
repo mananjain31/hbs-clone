@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
     <script>
       tailwind.config = {
         theme: {
@@ -29,6 +30,21 @@
     <title>Online Leadership Principles Course | HBS Online</title>
   </head>
   <body>
+    <aside
+      class="h-screen fixed right-0 top-0 bg-primary-red z-[11] w-64 text-white hidden"
+    >
+      <section class="flex justify-between p-4 border-b-2 border-white">
+        <span>HSB ONLINE</span>
+        <span class="cursor-pointer" onclick="toggleAside()">X</span>
+      </section>
+      <section class="flex flex-col gap-4 p-4 border-b-2 border-white">
+        <h3>COURSES</h3>
+        <h3>COURSES</h3>
+        <h3>COURSES</h3>
+        <h3>COURSES</h3>
+        <h3>COURSES</h3>
+      </section>
+    </aside>
     <nav class="nav flex justify-between px-6 py-4 sticky top-0 bg-white z-10">
       <img
         loading="eager"
@@ -48,7 +64,7 @@
           <i class="fa fa-search"></i>
         </a>
         <span>Login</span>
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars cursor-pointer" onclick="toggleAside()"></i>
       </div>
     </nav>
     <header class="flex lg:flex-row flex-col-reverse">
